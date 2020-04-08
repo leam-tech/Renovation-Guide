@@ -5,10 +5,10 @@
 Renovation is available as an `npm` package and can be installed using:
 
 ```bash
-npm i --save @leam/lts-renovation-core
+npm i --save @leam-tech/renovation-core
 ```
 
-> If you feel edgy or live dangerously, use the cutting-_**edge**_ features of Renovation, it can be installed using `@leam/lts-renovation-core@edge`.
+> If you feel edgy or live dangerously, use the cutting-_**edge**_ features of Renovation, it can be installed using `@leam-tech/renovation-core@edge`.
 
 ## Initialization
 

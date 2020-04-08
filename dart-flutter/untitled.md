@@ -5,7 +5,7 @@
 To get started with Renovation, add the following under _dependencies_ in `pubspec.yaml`:
 
 ```yaml
-lts_renovation_core: ^1.0.0
+renovation_core: ^1.0.2
 ```
 
 Then in the Terminal/CLI in the project's directory, run the following:
@@ -27,13 +27,13 @@ flutter pub get
 To get started, just import the package like:
 
 ```dart
-import 'package:lts_renovation_core/core.dart';
+import 'package:renovation_core/core.dart';
 ```
 
 The minimum lines to be added to initialize Renovation are:
 
 ```dart
-import 'package:lts_renovation_core/core.dart';
+import 'package:renovation_core/core.dart';
 
 void main() async {
   final renovationInstance = Renovation();
@@ -48,31 +48,31 @@ Renovation is instantiated as a _singleton_, so from any where in your app, as l
 **Auth**
 
 ```dart
-import 'package:lts_renovation_core/auth.dart';
+import 'package:renovation_core/auth.dart';
 ```
 
 **Model**
 
 ```dart
-import 'package:lts_renovation_core/model.dart';
+import 'package:renovation_core/model.dart';
 ```
 
 **Storage**
 
 ```dart
-import 'package:lts_renovation_core/storage.dart';
+import 'package:renovation_core/storage.dart';
 ```
 
 **Misc**
 
 ```dart
-import 'package:lts_renovation_core/misc.dart';
+import 'package:renovation_core/misc.dart';
 ```
 
 **Backend Specific**
 
 ```dart
-import 'package:lts_renovation_core/backend.dart';
+import 'package:renovation_core/backend.dart';
 ```
 
 ## Things to Know
