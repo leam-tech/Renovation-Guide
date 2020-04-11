@@ -28,5 +28,7 @@ The data within the generic error modifies the error object by:
 * Setting the error `type` as `GenericError`, if the error is not set with a `type`.
 * Setting the `httpCode` as `400`, if the error is not set with an `httpCode`.
 
-?&gt; Within this documentation under each function of a module, there maybe a _Possible Errors_ section specific to the function and handled with the controller. If the section doesn't exist, however, there are no specific errors that need to be handled in the front-end, hence, a _Generic Error_ is returned.
+{% hint style="info" %}
+Within this documentation under each function of a module, there maybe a _Possible Errors_ section specific to the function and handled with the controller. If the section doesn't exist, however, there are no specific errors that need to be handled in the front-end, hence, a _Generic Error_ is returned.
+{% endhint %}
 
