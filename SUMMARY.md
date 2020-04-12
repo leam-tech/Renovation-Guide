@@ -5,11 +5,11 @@
 
 ## Getting Started with Renovation <a id="getting-started"></a>
 
-* [Untitled](getting-started/untitled.md)
+* [Under Construction 🛠](getting-started/untitled.md)
 
 ## Frappe App \[renovation\_core\]
 
-* [Untitled](frappe-app-renovation_core/untitled.md)
+* [Under Construction 🛠](frappe-app-renovation_core/untitled.md)
 
 ## Core SDK  TS/JS <a id="ts-js"></a>
 
@@ -37,5 +37,5 @@
 
 ## Renovation-CMS
 
-* [Untitled](renovation-cms/untitled.md)
+* [Under Construction 🛠](renovation-cms/untitled.md)
 

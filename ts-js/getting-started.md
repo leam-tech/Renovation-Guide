@@ -18,9 +18,10 @@ After the installation of the package, you can initialize by calling the `.init(
 
 | property | type | required | description |
 | :--- | :--- | :---: | :--- |
-| backend | string | no | The type of backend to be used. |
-| hostUrl | string | no | The URL to the backend |
+| hostUrl | string | yes | The URL to the bench site. |
+| backend | RenovationBackend | no | The type of backend to be used. Defaults to "firebase". |
 | clientId | string | no | The client ID used for Nginx |
+| disableLog | boolean | no | Whether to show the logs in the console. Defaults to `false`. |
 
 ### Usage
 

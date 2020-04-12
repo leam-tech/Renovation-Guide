@@ -4,19 +4,19 @@ The interface `ErrorDetail` is used across the SDK to represent errors in a unif
 
 ### ErrorDetail
 
-| property | type | required | description |
-| :--- | :--- | :---: | :--- |
-| title | string | no |  |
-| description | string | no |  |
-| type | `RenovationError` | no |  |
-| info | object | yes |  |
-| info.server\_messages | string\[\] | no |  |
-| info.httpCode | number | no |  |
-| info.cause | string | no |  |
-| info.suggestion | string | no |  |
-| info.data | data | no |  |
-| info.rawResponse | `AxiosResponse` | no |  |
-| info.rawError | `AxiosError` | no |  |
+| property | type | required |
+| :--- | :--- | :---: |
+| title | string | no |
+| description | string | no |
+| type | `RenovationError` | no |
+| info | object | yes |
+| info.server\_messages | string\[\] | no |
+| info.httpCode | number | no |
+| info.cause | string | no |
+| info.suggestion | string | no |
+| info.data | data | no |
+| info.rawResponse | `AxiosResponse` | no |
+| info.rawError | `AxiosError` | no |
 
 ## Generic Error
 
