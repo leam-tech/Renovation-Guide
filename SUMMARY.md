@@ -22,7 +22,6 @@
 * [.storage](ts-js/.storage.md)
 * [.translate](ts-js/.translate.md)
 * [Errors](ts-js/errors.md)
-* [Changelog](ts-js/changelog.md)
 
 ## Core SDK  Dart/Flutter <a id="dart-flutter"></a>
 
