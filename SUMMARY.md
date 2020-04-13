@@ -9,7 +9,7 @@
 
 ## Frappe App \[renovation\_core\]
 
-* [Under Construction 🛠](frappe-app-renovation_core/untitled.md)
+* [Introduction](frappe-app-renovation_core/untitled.md)
 
 ## Core SDK  TS/JS <a id="ts-js"></a>
 
