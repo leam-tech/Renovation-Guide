@@ -25,7 +25,7 @@
 
 ## Core SDK  Dart/Flutter <a id="dart-flutter"></a>
 
-* [Getting started](dart-flutter/untitled.md)
+* [Getting started](dart-flutter/getting-started.md)
 * [.auth](dart-flutter/.auth.md)
 * [.default](dart-flutter/.default.md)
 * [.meta](dart-flutter/.meta.md)
