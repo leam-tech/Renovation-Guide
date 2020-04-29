@@ -36,6 +36,6 @@
 
 ## Renovation-CMS
 
-* [Untitled](renovation-cms/untitled-1.md)
-* [Nginx Configuration](renovation-cms/untitled.md)
+* [Renovation Script](renovation-cms/renovation-script.md)
+* [Nginx Configuration](renovation-cms/nginx.md)
 
