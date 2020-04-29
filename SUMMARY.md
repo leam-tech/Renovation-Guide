@@ -36,5 +36,5 @@
 
 ## Renovation-CMS
 
-* [Under Construction 🛠](renovation-cms/untitled.md)
+* [Nginx Configuration](renovation-cms/untitled.md)
 
