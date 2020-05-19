@@ -97,7 +97,7 @@ server {
 }
 ```
 
-Now, lets break it down.
+Now, let's break it down.
 
 #### Upstream
 
@@ -112,7 +112,7 @@ upstream frappe-server {
 
 #### The Server Block
 
-You can find commong nginx directives inside this. The location block `location /` is set just like how we set for a SPA, and other nginx optimizations like `sendfile` and `gzip` compression has been enabled, along with basic `SSL` setup.
+You can find common nginx directives inside this. The location block `location /` is set just like how we set for a SPA, and other nginx optimizations like `sendfile` and `gzip` compression has been enabled, along with basic `SSL` setup.
 
 #### The API Location Block
 
