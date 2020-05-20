@@ -5,11 +5,11 @@
 
 ## Getting Started with Renovation <a id="getting-started"></a>
 
-* [Untitled](getting-started/untitled.md)
+* [Under Construction 🛠](getting-started/untitled.md)
 
 ## Frappe App \[renovation\_core\]
 
-* [Untitled](frappe-app-renovation_core/untitled.md)
+* [Introduction](frappe-app-renovation_core/introduction.md)
 
 ## Core SDK  TS/JS <a id="ts-js"></a>
 
@@ -22,18 +22,20 @@
 * [.storage](ts-js/.storage.md)
 * [.translate](ts-js/.translate.md)
 * [Errors](ts-js/errors.md)
-* [Changelog](ts-js/changelog.md)
 
 ## Core SDK  Dart/Flutter <a id="dart-flutter"></a>
 
-* [Getting started](dart-flutter/untitled.md)
+* [Getting started](dart-flutter/getting-started.md)
 * [.auth](dart-flutter/.auth.md)
 * [.default](dart-flutter/.default.md)
+* [.meta](dart-flutter/.meta.md)
 * [.model](dart-flutter/.model.md)
-* [.storage](dart-flutter/.storage.md)
 * [.perm](dart-flutter/.perm.md)
+* [.storage](dart-flutter/.storage.md)
+* [.translate](dart-flutter/.translate.md)
 
 ## Renovation-CMS
 
-* [Untitled](renovation-cms/untitled.md)
+* [Renovation Script](renovation-cms/renovation-script.md)
+* [Nginx Configuration](renovation-cms/nginx.md)
 
