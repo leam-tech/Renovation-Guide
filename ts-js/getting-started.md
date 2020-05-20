@@ -70,5 +70,27 @@ For example, `RenovationDocument`
 
 This mean that the return is actually `<Promise<RequestResponse<RenovationDocument>>>`
 
+## Featured Methods
+
+There are some methods that are either completely or partially dependent on a custom frappe app \([renovation\_core](https://github.com/leam-tech/renovation_core.git)\). When using a method/feature that requires a custom app, an error will be thrown in case the app is not installed in your site. For example: 
+
+```javascript
+Error: The app "renovation_core" is not installed in the backend.
+Please install it to be able to use the feature(s):
+
+withLinkFields
+tableFields
+```
+
+Throughout the guide, there will be indications when a method is completely or partially dependent on a custom frappe app.
+
+Completely dependent: ★
+
+Partially dependent: ☆
+
+{% hint style="info" %}
+By default, if there are no indications, it means the method is independent of a custom frappe app.In other words, it supports Vanilla Frappé.
+{% endhint %}
+
 ## [API Documentation](http://core-sdk-guide.surge.sh)
 
