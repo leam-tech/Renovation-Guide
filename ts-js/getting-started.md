@@ -5,10 +5,10 @@
 Renovation is available as an `npm` package and can be installed using:
 
 ```bash
-npm i --save @leam/lts-renovation-core
+npm i --save @leam-tech/renovation-core
 ```
 
-> If you feel edgy or live dangerously, use the cutting-_**edge**_ features of Renovation, it can be installed using `@leam/lts-renovation-core@edge`.
+> If you feel edgy or live dangerously, use the cutting-_**edge**_ features of Renovation, it can be installed using `@leam-tech/renovation-core@edge`.
 
 ## Initialization
 
@@ -18,9 +18,11 @@ After the installation of the package, you can initialize by calling the `.init(
 
 | property | type | required | description |
 | :--- | :--- | :---: | :--- |
-| backend | string | no | The type of backend to be used. |
-| hostUrl | string | no | The URL to the backend |
+| hostUrl | string | yes | The URL to the bench site. |
+| backend | RenovationBackend | no | The type of backend to be used. Defaults to "firebase". |
 | clientId | string | no | The client ID used for Nginx |
+| disableLog | boolean | no | Whether to show the logs in the console. Defaults to `false`. |
+| useJWT | boolean | no | Whether to use token based authentication. Defaults to `false`. |
 
 ### Usage
 
@@ -61,13 +63,35 @@ Across the SDK, functions will almost always return a `RequestResponse` object a
 | exc | `RenovationError` | no |
 | error | `ErrorDetail` | no |
 
-> Unless mentioned, all returns from the methods are enclosed within `<Promise<RequestResponse<T>>` where `T` is a the return type.  If the _Output_ is not as `<Promise<RequestResponse<T>>>`, the _Output_ will be marked with an asterisk \(\*\) which means the stated Output is the actual return type.
+> Unless mentioned, all returns from the methods are enclosed within `<Promise<RequestResponse<T>>` where `T` is a the return type. If the _Output_ is not as `<Promise<RequestResponse<T>>>`, the _Output_ will be marked with an asterisk \(\*\) which means the stated Output is the actual return type.
 
 For example, `RenovationDocument`
 
 > `RenovationDocument`
 
 This mean that the return is actually `<Promise<RequestResponse<RenovationDocument>>>`
+
+## Featured Methods
+
+There are some methods that are either completely or partially dependent on a custom frappe app \([renovation\_core](https://github.com/leam-tech/renovation_core.git)\). When using a method/feature that requires a custom app, an error will be thrown in case the app is not installed in your site. For example: 
+
+```javascript
+Error: The app "renovation_core" is not installed in the backend.
+Please install it to be able to use the feature(s):
+
+withLinkFields
+tableFields
+```
+
+Throughout the guide, there will be indications when a method is completely or partially dependent on a custom frappe app.
+
+Completely dependent: ★
+
+Partially dependent: ☆
+
+{% hint style="info" %}
+By default, if there are no indications, it means the method is independent of a custom frappe app.In other words, it supports Vanilla Frappé.
+{% endhint %}
 
 ## [API Documentation](http://core-sdk-guide.surge.sh)
 
