@@ -30,12 +30,19 @@
 * [.default](dart-flutter/.default.md)
 * [.meta](dart-flutter/.meta.md)
 * [.model](dart-flutter/.model.md)
-* [.perm](dart-flutter/.perm.md)
 * [.storage](dart-flutter/.storage.md)
+* [.perm](dart-flutter/.perm.md)
 * [.translate](dart-flutter/.translate.md)
 
 ## Renovation-CMS
 
-* [Renovation Script](renovation-cms/renovation-script.md)
+* [Renovation Script](renovation-cms/renovation-script/README.md)
+  * [Custom Dialog](renovation-cms/renovation-script/custom-dialog.md)
+  * [Form Custom Button](renovation-cms/renovation-script/form-custom-button.md)
+  * [Spinners / Loaders](renovation-cms/renovation-script/spinners-loaders.md)
+  * [Routing](renovation-cms/renovation-script/routing.md)
+  * [Form Custom Dashboard](renovation-cms/renovation-script/form-custom-dashboard.md)
+  * [Link Field Custom Queries](renovation-cms/renovation-script/link-field-custom-queries.md)
+  * [List Row Status](renovation-cms/renovation-script/list-row-status.md)
 * [Nginx Configuration](renovation-cms/nginx.md)
 

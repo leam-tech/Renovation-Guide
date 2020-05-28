@@ -8,7 +8,7 @@ Authentication Module is responsible for all authentication functionality. Suppo
 
 On change of the session, i.e: user logs in or logs out, `SessionStatus`, a `BehaviorSubject`, is updated.
 
-## .login\(\) ☆
+## .login\(\)
 
 To login using username/email and password. This method returns a `SessionStatusInfo` object.
 
@@ -77,11 +77,7 @@ renovationInstance.auth
 >
 > **suggestion:** Enter the correct credentials
 
-{% hint style="info" %}
-By default cookies are used for session authentication. If JWT is required, call `auth.enableJWT(true)` before logging in.
-{% endhint %}
-
-## .pinLogin\(\) ★
+## .pinLogin\(\)
 
 This method is mostly used to quickly login, for instance POS. As with `.login()`, it returns `SessionStatusInfo`.
 
@@ -145,7 +141,7 @@ renovationInstance.auth
 >
 > **suggestion:** Re-enter the PIN correctly
 
-## .sendOTP\(\) ★
+## .sendOTP\(\)
 
 To get OTP using mobile number through SMS, this function can be used.
 
@@ -197,7 +193,7 @@ renovationInstance.auth
 The errors depends mostly on the SMS provider setup in the backend and would be propagated through this function \(API\)
 {% endhint %}
 
-## .verifyOTP\(\) ★
+## .verifyOTP\(\)
 
 To be used for verifying the OTP received after invoking `.sendOTP()`.
 
@@ -342,7 +338,7 @@ renovationInstance.auth.checkLogin().then(authResponse => {
 }
 ```
 
-## .getCurrentUserRoles\(\) ★
+## .getCurrentUserRoles\(\)
 
 Gets the roles of the current user logged in.
 
