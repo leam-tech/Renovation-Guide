@@ -36,6 +36,7 @@
 
 ## Renovation-CMS
 
+* [Sidebar](renovation-cms/sidebar.md)
 * [Dashboard](renovation-cms/dashboard.md)
 * [Renovation Script](renovation-cms/renovation-script/README.md)
   * [Custom Dialog](renovation-cms/renovation-script/custom-dialog.md)
