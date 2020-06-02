@@ -8,11 +8,13 @@ Authentication Module is responsible for all authentication functionality. Suppo
 
 On change of the session, i.e: user logs in or logs out, `SessionStatus`, a `BehaviorSubject`, is updated.
 
-## .login\(\)
+## .login\(\) ☆
 
 To login using username/email and password. This method returns a `SessionStatusInfo` object.
 
-> On successful verification, the `SessionStatus` is updated with the current user.
+{% hint style="info" %}
+ On successful verification, the `SessionStatus` is updated with the current user.
+{% endhint %}
 
 #### Input
 
@@ -75,11 +77,17 @@ renovationInstance.auth
 >
 > **suggestion:** Enter the correct credentials
 
-## .pinLogin\(\)
+{% hint style="info" %}
+By default cookies are used for session authentication. If JWT is required, call `auth.enableJWT(true)` before logging in.
+{% endhint %}
+
+## .pinLogin\(\) ★
 
 This method is mostly used to quickly login, for instance POS. As with `.login()`, it returns `SessionStatusInfo`.
 
-?&gt; On successful verification, the `SessionStatus` is updated with the current user.
+{% hint style="info" %}
+ On successful verification, the `SessionStatus` is updated with the current user.
+{% endhint %}
 
 #### Input
 
@@ -137,13 +145,17 @@ renovationInstance.auth
 >
 > **suggestion:** Re-enter the PIN correctly
 
-## .sendOTP\(\)
+## .sendOTP\(\) ★
 
 To get OTP using mobile number through SMS, this function can be used.
 
-!&gt; The SMS settings should be configured correctly in the backend before using this function
+{% hint style="warning" %}
+ The SMS settings should be configured correctly in the backend before using this function.
+{% endhint %}
 
-!&gt; This method does not authenticate the user. The next function `.verifyOTP()` will provide the option to authenticate the user and create a session.
+{% hint style="warning" %}
+This method does not authenticate the user. The next function `.verifyOTP()` will provide the option to authenticate the user and create a session.
+{% endhint %}
 
 #### Input
 
@@ -181,15 +193,21 @@ renovationInstance.auth
 
 #### Possible Errors
 
-!&gt; The errors depends mostly on the SMS provider setup in the backend and would be propagated through this function \(API\)
+{% hint style="danger" %}
+The errors depends mostly on the SMS provider setup in the backend and would be propagated through this function \(API\)
+{% endhint %}
 
-## .verifyOTP\(\)
+## .verifyOTP\(\) ★
 
 To be used for verifying the OTP received after invoking `.sendOTP()`.
 
-?&gt; On successful verification, the `SessionStatus` is updated with the current user.
+{% hint style="info" %}
+On successful verification, the `SessionStatus` is updated with the current user.
+{% endhint %}
 
-!&gt; Unlike `.login()`, this method will not return a `SessionStatusInfo`, instead a `VerifyOTPResponse` is returned.
+{% hint style="warning" %}
+Unlike `.login()`, this method will not return a `SessionStatusInfo`, instead a `VerifyOTPResponse` is returned.
+{% endhint %}
 
 #### Input
 
@@ -201,7 +219,9 @@ To be used for verifying the OTP received after invoking `.sendOTP()`.
 | OTP | string | yes | The OTP received by through SMS |
 | loginToUser | boolean | yes | Whether to generate a new OTP or reuse the existing one |
 
-?&gt; Note: If `loginToUser` is set to `false`, the user is not logged in and `SessionStatus` is not updated. This can be useful in some applications.
+{% hint style="warning" %}
+Note: If `loginToUser` is set to `false`, the user is not logged in and `SessionStatus` is not updated. This can be useful in some applications like validating a change of mobile number.
+{% endhint %}
 
 #### Output
 
@@ -322,11 +342,13 @@ renovationInstance.auth.checkLogin().then(authResponse => {
 }
 ```
 
-## .getCurrentUserRoles\(\)
+## .getCurrentUserRoles\(\) ★
 
 Gets the roles of the current user logged in.
 
-!&gt; If the user is not logged in, the roles of _**Guest**_ are loaded by default.
+{% hint style="warning" %}
+If the user is not logged in, the roles of _**Guest**_ are loaded by default.
+{% endhint %}
 
 #### Output
 
@@ -364,24 +386,9 @@ renovationInstance.auth.getCurrentUserRoles().then(userRoles => {
   "success": true,
   "httpCode": 200,
   "data": [
-    "Sales Master Manager",
-    "Renovation Service User",
-    "Stock User",
-    "Projects Manager",
+    "Translator",
+    "Renovation User",
     "Blogger",
-    "Sales Manager",
-    "Purchase Manager",
-    "Accounts Manager",
-    "Sales User",
-    "Expense Approver",
-    "Item Manager",
-    "Projects User",
-    "Purchase User",
-    "Fleet Manager",
-    "Stock Manager",
-    "System Manager",
-    "Accounts User",
-    "HR Manager",
     "All",
     "Guest"
   ]
@@ -431,7 +438,9 @@ renovationInstance.auth.getCurrentUserRoles().then(response => {
 }
 ```
 
-!&gt; Even if the server's response is a failure, the user will need to re-login since the user is logged out in the front-end.
+{% hint style="warning" %}
+Even if the server's response is a failure, the user will need to re-login since the user is logged out in the front-end.
+{% endhint %}
 
 ### Reference
 

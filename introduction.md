@@ -14,5 +14,5 @@ To be able to use the SDK, the backend should be setup up as:
 
 * Frappe Bench.
 * On the bench, a minimum of one site needs to be installed.
-* `renovation_core` app needs to be set up with the site. [Check it here](https://github.com/MalikZu/renovation_core)
+* `renovation_core` app needs to be set up with the site. [Check it here](https://github.com/leam-tech/renovation_core.git)
 
