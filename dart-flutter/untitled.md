@@ -92,7 +92,7 @@ Across the SDK, functions will almost always return a `RequestResponse` object a
 | error | `ErrorDetail` |
 | rawResponse | `Response<String>` \(Dio's Response\) |
 
-> Unless mentioned, all returns from the methods are enclosed within `<Future<RequestResponse<T>>` where `T` is a the return type.  If the _Output_ is not as `<Promise<RequestResponse<T>>>`, the _Output_ will be marked with an asterisk \(\*\) which means the stated Output is the actual return type.
+> Unless mentioned, all returns from the methods are enclosed within `<Future<RequestResponse<T>>` where `T` is a the return type. If the _Output_ is not as `<Promise<RequestResponse<T>>>`, the _Output_ will be marked with an asterisk \(\*\) which means the stated Output is the actual return type.
 
 For example, `String`
 
