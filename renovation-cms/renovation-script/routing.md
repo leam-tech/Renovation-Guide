@@ -12,7 +12,7 @@ The data is forwarded as it is to the `@angular/router`
 core.bus.post({
     // the subject id
     id: "navigate_router",
-    
+
     // routing data
     data: ["/form", "Item", "ITEM-00001"]
 });
@@ -34,12 +34,12 @@ core.bus.post({
 
 ## Standard Routes in the Application
 
-#### Forms
+### Forms
 
 The parameters required to route to a Form is the doctype and the name of the document  
 `["/form", "Item", "ITEM-0001"]`
 
-#### Lists
+### Lists
 
 The list view requires just the doctype  
 `["/list", "Item"]`

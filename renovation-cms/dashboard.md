@@ -8,11 +8,11 @@ Dashboards in Renovation can be custom made in any form you want. You can implem
 
 There are two main doctypes, `Renovation Dashboard` & `Renovation Dashboard Layout`. The `Renovation Dashboard` is a single dashboard item, it can be a `bar` or a `pie` graph. `Renovation Dashboard Layout` can be then used to lay out these graphs of yours in a way that fits your needs.
 
-### Renovation Dashboard Layout
+## Renovation Dashboard Layout
 
 Layouts can be made easily. Just create a new `Renovation Dashboard Layout`, specify a title for it and start listing all the dashboards in the order you require, with their sizes \(widths & heights\). You can specify if the items can resized / rearranged. Priority and Roles can give you more finer controls in making it work for your needs.
 
-### Renovation Dashboard
+## Renovation Dashboard
 
 These form the basic building block of your dashboard. You can mention the `title` , `subtitle` and other required parameters. There are various properties on this document on which you will need more information on:
 

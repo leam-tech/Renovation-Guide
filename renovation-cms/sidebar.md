@@ -10,3 +10,9 @@ Sidebar can be managed with the Sidebar Editor that is available from the Settin
 
 You can have multiple Sidebars defined that can be assigned to Roles.
 
+## Editor Access Role
+
+You can define who has access to the sidebar editor. It can be limited to a set of users with specific roles.
+
+![](../.gitbook/assets/image%20%282%29.png)
+

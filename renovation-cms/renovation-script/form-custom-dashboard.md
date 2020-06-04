@@ -6,7 +6,7 @@ description: 'You can add custom dashboards to Form view, beside the Attachments
 
 You have to get familiarized with the interface `DashboardElement`, which is the basic building block of custom dashboards.
 
-### DashboardElement Interface
+## DashboardElement Interface
 
 ```typescript
 interface DashboardElement {
@@ -35,7 +35,7 @@ interface DashboardElement {
 }
 ```
 
-### Basic Usage
+## Basic Usage
 
 You have to post to `form_dashboard_item` with the dashboard data
 
@@ -43,7 +43,7 @@ You have to post to `form_dashboard_item` with the dashboard data
 const dasboardData = {
     // some random id to distinguish your dashboard
     id: "test_dashboard",
-    
+
     header: DasboardElement[],
     items: DasboardElement[],
     itemsClass,
@@ -52,17 +52,17 @@ const dasboardData = {
     itemsListClass,
     itemsTemplate: DasboardElement[],
     footer: DasboardElement[],
-    
+
     // optional init function
     // this gets executed onload of form
     init: (core, doc, frm) => {
     },
-    
+
     // optional function that gets executed whenever
     // frappe-docevent gets updated
     onDocInfoLoaded: (core, doc, frm) => {
     },
-    
+
     // optional function to decide whether to show this dash or not
     condition: (core, doc, frm) => {
     }
@@ -74,7 +74,7 @@ core.bus.post({
 });
 ```
 
-### Attachment Dashboard Example
+## Attachment Dashboard Example
 
 ```typescript
 const dashData = {
@@ -129,7 +129,7 @@ const dashData = {
     };
 ```
 
-### Assignment Dashboard Example
+## Assignment Dashboard Example
 
 ```typescript
 const dashData = {

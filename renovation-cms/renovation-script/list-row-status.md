@@ -20,7 +20,7 @@ core.bus.post({
                 return "Active";
             }
         },
-        
+
         // What additional fields to get that may be useful for
         // computing the status
         include_fields: ["expired"]

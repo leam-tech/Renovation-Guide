@@ -15,20 +15,20 @@ const dialog_fields = [
 const dialog_data = {
     // the title to be shown on the modal window
     title: "Test Dialog",
-    
+
     // the fields to fill in the modal
     fields: dialog_fields,
-    
+
     // the events to fire when specific fields change
     events: {
         name: (core, doc) => {}
     },
-    
+
     // to define the behaviour of the main button
     primary_button: {
         // you can set any label you want
         label: "Ok!",
-        
+
         // function called on clicking this main button
         // modal will auto close after click
         onclick: (core, doc) => {

@@ -12,7 +12,7 @@ You can specify a custom python function using the `query` if you need fine cont
 core.ui.setLinkQueryOptions("Item", "item_price", {
     // optional custom query
     query: "my_app.custom_item_price_link",
-    
+
     // custom filters
     filters: (core, doc) => {
         return {

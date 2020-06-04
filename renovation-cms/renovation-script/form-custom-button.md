@@ -11,10 +11,10 @@ core.bus.post({
     id: "form_add_custom_button",
     data: {
         label: "Send Customer Email",
-        
+
         // optional
         group?: "CRM",
-        
+
         onclick: (core, doc) => {
             // do something on click
         }
